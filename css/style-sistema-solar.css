@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: black;
+    text-align: justify;
+    color: floralwhite;
+    display: inline;
+}
+
+header {
+    font-size: 1.8rem;
+    /* padding: 1rem; */
+    text-shadow: 3px 3px 5px rgb(117, 117, 214);
+}
+
+#titulo {
+    text-align: center;
+    border-bottom: 6px solid rgb(24, 17, 104);
+    padding: 40px;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+/* TUTORIAL DEL TEXTO ALREDEDOR DE LA IMAGEN */
+
+.container-all {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    /* border-top: 6px solid rgb(24, 17, 104); */
+}
+
+.title {
+    font-size: 50px;
+    /* margin-bottom: 60px; */
+    margin: 40px 0px 40px;
+    clear: left;
+    clear: top;
+    transition: color, text-shadow 1s ease;
+    color:rgb(109, 101, 203);
+    text-shadow: 1px 1px rgb(68, 174, 174);
+}
+
+.title:hover {
+    color:rgb(138, 106, 49);
+    text-shadow: 1px 1px rgb(160, 173, 141);
+    transition-delay: 0.5s;
+}
+
+.sub-title {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 25px 0px 25px;
+    clear: top;
+    color:rgb(109, 101, 203);
+    text-shadow: 1px 1px rgb(68, 174, 174);
+    transition: color, text-shadow 1s ease;
+}
+
+.sub-title:hover {
+    color:rgb(138, 106, 49);
+    text-shadow: 1px 1px rgb(160, 173, 141);
+    
+}
+
+.salto {
+    clear: right;
+}
+
+.dia {
+    clear:both;
+}
+
+table, th, td {
+    border: 1px solid floralwhite;
+    border-collapse: collapse;
+    padding: 10px;
+    background-color: rgba(32, 32, 95, 0.6);
+    /* text-align: left; POR DEFECTO */
+}
+
+.container-all p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.container-all img {
+    width: 400px;
+    height: auto;
+}
+
+.container-all img:hover {
+    cursor: pointer;
+}
+.modal-container {
+    /* NOMBRE DE LAS IMÁGENES*/
+    text-align: center;
+}
+
+
+.p-left {
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+.p-right {
+    float: right;
+    margin: 20px 0 0 20px;
+}
+
+.inicio {
+    margin-top: 0;
+}
+
+.planetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.modal-container h4 {
+    color: rgb(214, 173, 103);
+}
+
+.modal-container.active {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.modal-container img {
+    z-index: 1;
+}
+
+.modal-container.active img {
+    width: 800px;
+    height: auto;
+}
+
+.modal-container.active::after {
+    content:'';
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+footer {
+    clear: both;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: darksalmon;
+}

@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: black;
+    text-align: justify;
+    color: floralwhite;
+    display: inline;
+}
+
+header {
+    font-size: 1.8rem;
+    /* padding: 1rem; */
+    text-shadow: 3px 3px 5px rgb(117, 117, 214);
+}
+
+#titulo {
+    text-align: center;
+    border-bottom: 6px solid rgb(24, 17, 104);
+    padding: 40px;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+/* TUTORIAL DEL TEXTO ALREDEDOR DE LA IMAGEN */
+
+.container-all {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    /* border-top: 6px solid rgb(24, 17, 104); */
+}
+
+/* 
+COMENTADO PATRA EL EJEMPLO DEL MODAL
+
+.container-all img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} */
+
+.title {
+    font-size: 40px;
+    /* margin-bottom: 60px; */
+    margin: 40px 0px 40px;
+    clear: right;
+    clear: left;
+    color:rgb(138, 106, 49);
+    text-shadow: 1px 1px azure;
+}
+
+.sub-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 25px 0px 25px;
+    clear: left;
+    color:rgb(138, 106, 49);
+    text-shadow: 1px 1px azure;
+}
+
+.container-all p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.container-all img {
+    width: 400px;
+    height: auto;
+    /* float:right; */
+}
+
+.modal-container {
+    /* NOMBRE DE LAS IMÁGENES*/
+    text-align: center;
+}
+
+
+.p-left {
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+.p-right {
+    float: right;
+    margin: 20px 0 0 20px;
+}
+
+.modal-container h4 {
+    color:rgb(214, 173, 103);
+}
+    /* clip-path: circle(50% at top left); */
+    /* transition-property: width, height;    LÍNEA COMENTADA */
+    /* transition-property: clip-path; */
+    /* transition-duration: 2s; */
+    /* transition-timing-function: linear; */
+    /* transition-delay: 5s; TIEMPO QUE TARDA EN E
+
+} */
+
+/* .modal-container {
+    display: inline-block;
+    position: relative;
+} */
+
+.modal-container.active {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.modal-container img {
+    z-index: 1;
+}
+
+.modal-container.active img {
+    width: 800px;
+    height: auto;
+}
+
+.modal-container.active::after {
+    content:'';
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+/* TUTORIAL DE LOS EFECTOS DE LA IMAGEN Y LOS TÍTULOS */
+
+/* :root {
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+} */
+
+/* .texts {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+/* .name {
+    font-size: 3rem;
+    margin-bottom: .5em;
+} */
+
+/* .paragraph {
+    font-size: 2rem;
+    font-weight: 300;
+    --clippy: circle(0.0% at 50% 50%);
+} */
+
+
+/* .item {
+    position: relative;
+    padding-left: 1rem;
+    transition: color .1s;
+} */
+
+/* .item::before {
+    content: "";
+    display: block;
+    background: slateblue;
+    width: 120%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: var(--clippy);
+    transition: clip-path 2s;
+} */
+
+/* .paragraph::before {
+    background: #f86D70;
+} */
+
+/* .name:hover::before {
+    clip-path: polygon(52% 0, 0 0, 0 100%, 100% 100%);
+}
+*/
+
+
+/* .name:hover + .paragraph::before {
+    clip-path: circle(150% at 50% 50%);
+    transition: clip-path 1.5s 2s;
+} */
+
+/* .name:hover,
+.name:hover + .paragraph {
+    color: #000;
+} */
+
+
+/* COMENTADO PARA HACER EL EJEMPLO DEL MODAL CONTAINER
+.sol {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    clip-path: circle(50% at top left);
+    /* transition-property: width, height;    LÍNEA COMENTADA */
+    /* transition-property: clip-path; */
+    /* transition-duration: 2s; */
+    /* transition-timing-function: linear; */
+    /* transition-delay: 5s; TIEMPO QUE TARDA EN EJECUTAR LA TRANSICIÓN   LINEA COMENTADA*/
+/* } */
+
+/* .sol:hover { */
+    /* width: 500px;  LINEA COMENTADA
+    height: 500px;    LINEA COMENTADA */
+    /* clip-path: circle(150% at top left); */
+/* } */ 
+footer {
+    /* background-image: url("/images/fondo_negro.webp"); */
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: darksalmon;
+}

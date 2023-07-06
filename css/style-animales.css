@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: black;
+    text-align: justify;
+    color: floralwhite;
+    margin: 0;
+    font-size: 1rem;
+}
+
+header {
+    /* background-image: url("/images/fondo_negro.webp"); */
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+#titulo {
+    text-align: center;
+    border-bottom: 6px solid rgb(24, 17, 104);
+    padding: 40px;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.introduccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 200px;
+    align-items: center;
+}
+
+.introduccion-text {
+    margin: 10px 10px;
+}
+
+
+.introduction-container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    /* z-index: 99;
+    opacity: .85; */
+    /* padding: 50px 50px; */
+}
+
+.perros {
+
+}
+
+.primates {
+
+}
+
+.gatos {
+
+}
+
+.aranias {
+
+}
+
+.otros {
+
+}
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    background-color: silver;
+    padding: 20px 75px;
+}
+
+.slider-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 10em;
+}
+
+.slider-body {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: silver;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider-body-show {
+    opacity: 1;
+    pointer-events: unset;
+
+}
+
+.slider-texts {
+    max-width: 600px;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(21, 23, 131);
+}
+
+.slider-review {
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.7;
+    
+    color: rgb(57, 81, 235);
+}
+
+.slider-img {
+    width: 450px;
+    height: 345px;
+    border-radius: 20%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider-arrow {
+    cursor:pointer;
+    width: 90%;
+}
+
+.slider-arrow:nth-of-type(2) {
+    justify-self: end;
+}
+
+footer {
+    /* background-image: url("/images/fondo_negro.webp"); */
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: darksalmon;
+}
+
+@media (max-width:768px){
+    .slider-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 1rem;
+    }
+
+    .slider-picture {
+        grid-row: 1/2;
+    }
+
+    .slider-img {
+        width: 210px;
+        height: 210px;
+
+    }
+}
+
+@media (max-width:425px){
+    .slider-container {
+        grid-template-columns: 25px 1fr 25px;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .slider-arrow {
+        width: 100%;
+    }
+
+    .slider-img {
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .slider-review {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}

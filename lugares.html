@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/data.js"></script>
+    <!-- LE QUITÉ ASYNC ANTES DE DEFER -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXPmcxbcvSlNk2YjY3ojumOtJ3QQ4Me78&map_ids=2de3b41a4c63d60d&callback=initMap" type="text/javascript"></script>
+    <script src="./js/map.js"></script>
+    <title>Lugares sobre Astronomía</title>
+    <link rel="shortcut icon" href="images/favicon_fondo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@400;700&family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/style-lugares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1 id="titulo">🔭✨Lugares sobre Astronomía✨🔭</h1>
+    </header>
+    <div class="grid">
+        <div class="lista_lugares grid-1">
+            <h3>✨Lugares sobre Astronomía✨</h3>
+            <div class="nombres" id="nombres"></div>
+        </div>
+        <div id="map" class="grid-2"></div>
+    </div>
+    <footer>
+        <section>
+            <a href="index.html">Regresar a la página principal&nbsp</a>
+            <a href="#titulo">Ir al comienzo&nbsp</a>
+            <a href="mailto:montserrat.zacapu@gmail.com">&nbspContacto mediante correo</a>
+        </section>
+        <p>&copy;Blog espacial 2022</p>
+    </footer>
+    <script src="js/particles.min.js"></script>
+    <script src="js/funcion-particles.js"></script>
+</body>
+</html>

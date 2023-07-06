@@ -1,0 +1,150 @@
+/*
+font-family: 'Comforter Brush', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+/* section {
+    display: inline;    COMENTADO PERO NO SÉ SI CAMBIA ALGO 
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99;
+    
+    /* border-color: white; */
+    /* opacity: .5; */
+}
+
+.descripcion {
+    max-width: 400px;
+    margin: 0;
+}
+
+header {
+    /* font-family: 'Dancing Script', cursive; */
+    /* background-image: url("/images/fondo_negro.webp"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    
+    color: #fff;
+    color: white;
+    padding: 2rem 1rem;
+    text-shadow: 3px 3px 5px rgb(117, 117, 214);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+section {
+    /* background-color: black ; */
+    /* background-image: url("/images/fondo.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
+section article a {
+    transition: color 0.3s ease;
+    color: rgb(249, 247, 247);
+    text-decoration: none;
+}
+
+section article {
+    transition: 0.3s ease;
+    /* box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.7); */
+    background-color: rgb(114, 111, 195);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(235, 227, 227, 0.7);
+}
+
+section article:hover {
+    /* box-shadow: 5px 5px 4px rgba(235, 227, 227, 0.7); */
+    /* box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3); */
+    box-shadow: rgba(230, 224, 224, 0.25) 0px 26px 27px, rgba(238, 232, 232, 0.12) 0px -12px 30px, rgba(245, 243, 243, 0.12) 0px 4px 6px, rgba(239, 231, 231, 0.17) 0px 12px 13px, rgba(230, 222, 222, 0.09) 0px -3px 5px;
+}
+
+section article p {
+    text-align: justify;
+    padding: 8px 8px;
+    /* font-size: 1.2rem; */
+}
+section article h2, section article p {
+    margin: 1rem;
+    
+}
+
+footer {
+    /* background-color: #222; */
+    padding: 3rem;
+    /* color: #fff; */
+    /* background-image: url("/images/fondo_negro.webp"); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    color: #fff;
+}
+
+.enlaces-finales {
+    float: right;
+    background: none;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: darksalmon;
+}
+
+
+.post {
+    /* max-width: "100"; */
+    margin: 50px 50px;   
+}
